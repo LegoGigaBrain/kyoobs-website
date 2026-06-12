@@ -801,6 +801,14 @@
     --marquee-duration: 116s;
   }
 
+  .catalogue-marquee-card {
+    min-height: 0;
+  }
+
+  .catalogue-marquee-card img {
+    height: auto;
+  }
+
   .expression-panel,
   .about-panel {
     --expression-image-size: clamp(236px, 70vw, 296px);

@@ -86,7 +86,7 @@ export default function PreviousIterationPage() {
               <div className="catalogue-marquee-track">
                 {[...previews, ...previews].map((preview, index) => (
                   <figure key={`${preview.src}-${index}`} className="catalogue-marquee-card" aria-hidden={index >= previews.length}>
-                    <img src={preview.src} alt={index < previews.length ? preview.label : ""} />
+                    <img src={preview.src} alt={index < previews.length ? preview.label : ""} loading="lazy" />
                   </figure>
                 ))}
               </div>
