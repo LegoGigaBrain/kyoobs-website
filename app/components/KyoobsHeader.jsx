@@ -8,7 +8,7 @@ const websiteAsset = (file) => `/assets/website-elements/${file}`;
 const navItems = [
   { label: "EMANATION", href: "/" },
   { label: "CREATION", href: "/about" },
-  { label: "FORMATION", href: "/world-of-formation" },
+  { label: "FORMATION", href: "/formation" },
   { label: "MANIFESTATION", href: "/manifestation" }
 ];
 

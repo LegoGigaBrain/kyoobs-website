@@ -49,7 +49,7 @@ export default function PreviousIterationPage() {
             </h1>
             <div className="hero-rule" aria-hidden="true" />
             <p>Kyoobs are human adjacent beings whose proportions obey another law.</p>
-            <a className="text-link" href="/world-of-formation">
+            <a className="text-link" href="/formation">
               ENTER THE WORLD
             </a>
           </div>
@@ -59,7 +59,7 @@ export default function PreviousIterationPage() {
           <h2>THE WORLD OF FORMATION</h2>
           <p>A dimension of pure potential. Where identity assembles and meaning takes shape.</p>
           <div className="panel-action-row">
-            <a className="text-link" href="/world-of-formation">
+            <a className="text-link" href="/formation">
               EXPLORE -&gt;
             </a>
             <div className="panel-number">02 / 06</div>

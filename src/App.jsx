@@ -6,7 +6,7 @@ import { FaDiscord, FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 const navItems = [
-  { href: "/world-of-formation", label: "WORLD OF FORMATION" },
+  { href: "/formation", label: "WORLD OF FORMATION" },
   { href: "/catalogue", label: "CATALOGUE" },
   { href: "/manifestation", label: "WORLD OF EXPRESSION" },
   { href: "/about", label: "ABOUT" }
@@ -152,7 +152,7 @@ function HeroPanel() {
         <h1>WE<br />DECONSTRUCT<br />TO RECONSTRUCT</h1>
         <div className="hero-rule" />
         <p>Identity is not given.<br />It is formed</p>
-        <Link className="solid-link" href="/world-of-formation">ENTER THE WORLD</Link>
+        <Link className="solid-link" href="/formation">ENTER THE WORLD</Link>
       </div>
       <nav className="cosmology-nav" aria-label="KYOOBS worlds">
         <span>EMANATION</span>
@@ -225,7 +225,7 @@ function HomeLanding() {
         <div className="formation-preview-copy">
           <h2>THE<br />WORLD<br />OF<br />FORMATION</h2>
           <p>A dimension of pure potential. Where identity assembles and meaning takes shape.</p>
-          <Link className="text-link arrow-link" href="/world-of-formation">EXPLORE</Link>
+          <Link className="text-link arrow-link" href="/formation">EXPLORE</Link>
         </div>
         <div className="color-index" aria-hidden="true">
           <span />
