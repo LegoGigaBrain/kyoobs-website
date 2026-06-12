@@ -1,0 +1,20 @@
+{
+  "name": "kyoobs-website",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build",
+    "start": "next start -H 0.0.0.0"
+  },
+  "dependencies": {
+    "next": "^16.1.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-icons": "^5.6.0"
+  },
+  "overrides": {
+    "postcss": "^8.5.10"
+  }
+}
