@@ -83,13 +83,11 @@ export default function PreviousIterationPage() {
         <div className="lower-panel-row" aria-label="KYOOBS lower panels">
           <article className="panel catalogue-panel" id="catalogue" data-panel>
             <div className="catalogue-marquee" aria-label="Preview Kyoobs carousel">
-              <div className="catalogue-marquee-track">
-                {[...previews, ...previews].map((preview, index) => (
-                  <figure key={`${preview.src}-${index}`} className="catalogue-marquee-card" aria-hidden={index >= previews.length}>
-                    <img src={preview.src} alt={index < previews.length ? preview.label : ""} loading="lazy" />
-                  </figure>
-                ))}
-              </div>
+              {[...previews, ...previews].map((preview, index) => (
+                <figure key={`${preview.src}-${index}`} className="catalogue-marquee-card" aria-hidden={index >= previews.length}>
+                  <img src={preview.src} alt={index < previews.length ? preview.label : ""} loading="lazy" />
+                </figure>
+              ))}
             </div>
             <div className="catalogue-copy">
               <span className="kicker">CATALOGUE</span>
