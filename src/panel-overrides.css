@@ -965,8 +965,16 @@
   }
 }
 
-.catalogue-room .catalogue-rail,
-.manifestation-room .manifestation-rail {
+@keyframes manifestationMarquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.catalogue-room .catalogue-rail {
   display: flex;
   grid-template-columns: none;
   width: max-content;
@@ -975,8 +983,19 @@
   will-change: transform;
 }
 
+.manifestation-room .manifestation-marquee {
+  overflow: hidden;
+  width: 100%;
+}
+
 .manifestation-room .manifestation-rail {
-  animation-duration: 64s;
+  display: flex;
+  grid-template-columns: none;
+  gap: 12px;
+  width: max-content;
+  overflow: visible;
+  animation: manifestationMarquee 96s linear infinite;
+  will-change: transform;
 }
 
 .catalogue-room .catalogue-card,

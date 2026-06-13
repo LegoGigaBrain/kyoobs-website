@@ -4,11 +4,24 @@ import KyoobsHeader from "../components/KyoobsHeader";
 const manifestationAsset = (file) => `/assets/manifestation/${file}`;
 
 const physicalRenders = [
-  { src: manifestationAsset("interior-rug.png"), title: "Interior Rug", meta: "World of Expression" },
-  { src: manifestationAsset("wall-piece.png"), title: "Wall Piece", meta: "Spatial artifact" },
-  { src: manifestationAsset("collector-artifact.png"), title: "Collector Object", meta: "Physical Kyoob" },
-  { src: manifestationAsset("fashion.png"), title: "Wearable Signal", meta: "Body manifestation" }
-];
+  "physical-01.png",
+  "physical-02.png",
+  "physical-03.png",
+  "physical-04.jpg",
+  "physical-05.png",
+  "physical-06.png",
+  "physical-07.png",
+  "physical-08.png",
+  "physical-09.png",
+  "physical-10.png",
+  "physical-11.png",
+  "physical-12.png",
+  "physical-13.jpg"
+].map((file, index) => ({
+  src: manifestationAsset(file),
+  title: `Physical Collectible ${String(index + 1).padStart(2, "0")}`,
+  meta: "World of Expression"
+}));
 
 export default function ManifestationPage() {
   return (
@@ -21,16 +34,18 @@ export default function ManifestationPage() {
           <p>This is where the abstract dimension materialises into physical reality.</p>
         </div>
 
-        <div className="manifestation-rail" aria-label="Physical manifestation marquee">
-          {[...physicalRenders, ...physicalRenders].map((item, index) => (
-            <figure className="manifestation-card" key={`${item.src}-${index}`} aria-hidden={index >= physicalRenders.length}>
-              <img src={item.src} alt={index < physicalRenders.length ? item.title : ""} />
-              <figcaption>
-                {item.title}
-                <span>{item.meta}</span>
-              </figcaption>
-            </figure>
-          ))}
+        <div className="manifestation-marquee" aria-label="Physical manifestation marquee">
+          <div className="manifestation-rail">
+            {[...physicalRenders, ...physicalRenders].map((item, index) => (
+              <figure className="manifestation-card" key={`${item.src}-${index}`} aria-hidden={index >= physicalRenders.length}>
+                <img src={item.src} alt={index < physicalRenders.length ? item.title : ""} />
+                <figcaption>
+                  {item.title}
+                  <span>{item.meta}</span>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
         </div>
       </section>
 
