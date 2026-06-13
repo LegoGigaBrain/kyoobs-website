@@ -5,6 +5,7 @@ import KyoobsFooter from "./components/KyoobsFooter";
 import KyoobsHeader from "./components/KyoobsHeader";
 
 const websiteAsset = (file) => `/assets/website-elements/${file}`;
+const marqueeAsset = (file) => `/assets/website-elements/smaller-preview-kyoobs/${file}`;
 const manifestationAsset = (file) => `/assets/manifestation/${file}`;
 
 export default function PreviousIterationPage() {
@@ -13,7 +14,7 @@ export default function PreviousIterationPage() {
   const previews = useMemo(
     () =>
       Array.from({ length: 9 }, (_, index) => ({
-        src: websiteAsset(`Kyoob-preview-${index + 1}.png`),
+        src: marqueeAsset(`Kyoob-preview-${index + 1}.png`),
         label: `KYOOB ${String(index + 1).padStart(2, "0")}`
       })),
     []
