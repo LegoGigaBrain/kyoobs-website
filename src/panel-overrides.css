@@ -120,10 +120,15 @@
   --marquee-duration: 132s;
   --marquee-card-size: clamp(256px, 28vw, 420px);
   grid-column: 1 / -1;
+  width: calc(100% + 52px);
+  margin: 0 -26px 2px;
   overflow: hidden;
   border-top: 2px solid var(--ink);
   border-bottom: 2px solid var(--ink);
   background: #f3e6cb;
+}
+
+.catalogue-marquee-track {
   display: flex;
   width: max-content;
   animation: catalogueMarquee var(--marquee-duration) linear infinite;
