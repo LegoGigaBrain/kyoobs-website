@@ -137,6 +137,7 @@
 
 .catalogue-marquee-card {
   flex: 0 0 var(--marquee-card-size);
+  height: var(--marquee-card-size);
   margin: 0;
   border-right: 2px solid var(--ink);
   background: var(--paper);
